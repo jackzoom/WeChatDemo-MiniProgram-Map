@@ -1,0 +1,85 @@
+/**index.wxss**/
+
+.map-title-address {
+  position: absolute;
+  right: 50rpx;
+  left: 50rpx;
+  top: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.map-btn-location {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  z-index: 10;
+  line-height: 1;
+  background: #fff;
+  box-shadow: 0 0 10rpx #ddd;
+  padding: 10rpx;
+  border-radius: 50%;
+}
+
+.map-btn-signin {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  margin: auto;
+  z-index: 10;
+  line-height: 150rpx;
+  background: rgb(5, 160, 231);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 35rpx;
+}
+
+.map-btn-signin.on {
+  background-color: #1aaba8;
+}
+
+.map-btn-scale {
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+  width: 60rpx;
+  z-index: 10;
+  line-height: 1;
+  background: #fff;
+  box-shadow: 0 0 10rpx #ddd;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+
+.btn-scale-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx;
+}
+
+.map-controls-group {
+  padding: 20rpx;
+}
+
+.map-btn {
+  display: inline-block;
+  background: #1aaba8;
+  color: #fff;
+  padding: 10rpx 20rpx;
+  font-size: 26rpx;
+  border-radius: 1000rpx;
+  margin-right: 10rpx;
+}

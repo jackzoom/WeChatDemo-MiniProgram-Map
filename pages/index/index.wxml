@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<map id="sign-map" markers='{{mapMarkers}}' circles="{{mapCircles}}" scale='{{mapScale}}' longitude='{{locationDot.long}}' latitude='{{locationDot.lat}}' show-location style="width: 100%; height:700rpx;">
+  <cover-view class="map-title-address">
+    当前位置：{{sigInData['address']}}
+  </cover-view>
+
+  <!-- 手动定位 -->
+  <cover-view bindtap='locationTap' class="map-btn-location">
+    <cover-image src="/static/images/icon-location-sign-on.png"></cover-image>
+  </cover-view>
+  <!-- 签到按钮 -->
+  <cover-view bindtap='signInTap' class="map-btn-signin {{mapSignType==1?'on':''}}">
+    {{mapSignText}}
+  </cover-view>
+
+  <!-- 缩放组 -->
+  <cover-view class='map-btn-scale'>
+    <cover-image bindtap='mapScalePlus' class='btn-scale-image' src="/static/images/icon-location-scale-plus.png"></cover-image>
+    <cover-view class='btn-scale-line'></cover-view>
+    <cover-image bindtap='mapScaleSub' class='btn-scale-image' src="/static/images/icon-location-scale-sub.png"></cover-image>
+  </cover-view>
+</map>
+
+<view class='map-controls-group'>
+  <view class='map-btn' bindtap='locationTap'>手动定位</view>
+  <view class='map-btn' bindtap='mapScalePlus'>放大</view>
+  <view class='map-btn' bindtap='mapScaleSub'>缩小</view>
+  <view class='map-btn' bindtap='signInTap'>签到</view>
+</view>
+
+<view class='map-controls-group'>
+  <view class='map-btn' bindtap='getMapCenterTap'>获取屏幕中心坐标</view>
+  <view class='map-btn' bindtap='getZmPoiTap'>地址转坐标</view>
+</view>
